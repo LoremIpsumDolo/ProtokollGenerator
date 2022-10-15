@@ -1,0 +1,4 @@
+config.json
+protocol.html
+# Project exclude paths
+/app/logs/

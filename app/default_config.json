@@ -1,0 +1,18 @@
+{
+  "PathTo_ExcelFile"  : "C:\\Users\\file.xlsx",
+  "SheetNames"        : [
+	"Monitore",
+	"Notebooks",
+	"PCs",
+	"ThinClients",
+	"Tablet"
+  ],
+  "Columns"           : [
+	"ID",
+	"Modell",
+	"Seriennummer"
+  ],
+  "OutputFileName"    : "protocol.html",
+  "DateFormat"        : "%d.%m.%Y",
+  "IT_MitarbeiterName": "Jane Doe"
+}

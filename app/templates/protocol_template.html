@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Übergabe Protocol</title>
+
+	<style>
+		{% include "style.css" %}
+	</style>
+
+	<script>
+		{% include "script.js" %}
+	</script>
+
+</head>
+<body>
+
+<main>
+
+	<div class="row align_center">
+		<h4>Gemeinnützige ProCurand GmbH</h4>
+	</div>
+
+	<div id="date" class="row">
+		<span>{{ Date }}</span>
+	</div>
+
+	<div class="row">
+		<h3>Geräteübergabe Erklärung</h3>
+	</div>
+
+	<div class="row">
+		<p>
+			Der Unterzeichner hat ein Gerät vom
+			Typ: <span id="Modell" class="editable" onclick="edit('Modell')"
+			           style="font-weight: bold">{{ Data.Modell }}</span>
+			<input class="invisible" type="text" id="Modell_edit" name="Modell_edit">
+			mit der
+			Seriennummer: <span onclick="edit('Seriennummer')" class="editable" id="Seriennummer"
+			                    style="font-weight: bold">{{ Data.Seriennummer }}</span>
+			<input class="invisible" type="text" id="Seriennummer_edit" name="Seriennummer_edit">
+			zur dienstlichen Nutzung erhalten.
+			Mit seiner Unterschrift bestätigt er den Erhalt des funktionsfähigen Gerätes.
+			Des Weiteren verpflichtet er sich alle in der Nutzungszeit entstandenen Schäden oder Mängel bei der Rückgabe
+			anzugeben
+		</p>
+	</div>
+
+	<div class="row align_left">
+		<table>
+
+			<tr>
+				<td style="width: 30%">Unterschrift des Empfängers:</td>
+				<td colspan="2" class="underline"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td style="width: 50%" class="fs_small text_align_left">Berlin, {{ Date }}</td>
+				<td style="width: 50%" class="fs_small text_align_right"><span
+						class="editable" id="EmpfaengerName"
+						onclick="edit('EmpfaengerName')">{{ EmpfaengerName }}</span>
+					<input class="invisible" type="text" id="EmpfaengerName_edit" name="EmpfaengerName_edit">
+				</td>
+			</tr>
+
+
+			<tr>
+				<td style="width: 30%">Unterschrift des IT-Mitarbeiters:</td>
+				<td colspan="2" class="underline"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td style="width: 50%" class="fs_small text_align_left">Berlin, {{ Date }}</td>
+				<td style="width: 50%" class="fs_small text_align_right"><span
+						class="editable" id="IT_MitarbeiterName"
+						onclick="edit('IT_MitarbeiterName')">{{ IT_MitarbeiterName }}</span>
+					<input class="invisible" type="text" id="IT_MitarbeiterName_edit" name="IT_MitarbeiterName_edit">
+				</td>
+			</tr>
+		</table>
+	</div>
+</main>
+
+</body>
+</html>
