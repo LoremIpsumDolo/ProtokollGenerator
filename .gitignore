@@ -1,4 +1,7 @@
-config.json
+debug_config.json
 protocol.html
+run_proto.bat
+protowrapper.ps1
+
 # Project exclude paths
 /app/logs/
