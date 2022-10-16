@@ -16,5 +16,5 @@
 
  ### Setup
  
- * config unter `ProtokollGenerator/app/default_config.json` anpassen
+ * config unter `ProtokollGenerator/app/config.json` anpassen
  * `main.py` auführen
