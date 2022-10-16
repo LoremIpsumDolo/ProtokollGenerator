@@ -10,7 +10,7 @@
     (oder alles per Zip runterladen -> entpacken)
 
 
-* im entpackten Verzeichnis powershell starten 
+* ins entpackte Verzeichnis wechseln
 * `pip3 install -r requirements.txt`
 
 
