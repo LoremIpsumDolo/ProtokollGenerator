@@ -5,7 +5,7 @@
 
 ### Installation
 
-* cmd cd in das wünschte Verzeichnis -> `git clone https://github.com/LoremIpsumDolo/ProtokollGenerator`
+* cmd cd in das wünschte Verzeichnis -> `git clone https://github.com/LoremIpsumDolo/ProtokollGenerator.git`
 
     (oder alles per Zip runterladen -> entpacken)
 
