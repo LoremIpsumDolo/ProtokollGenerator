@@ -11,16 +11,20 @@ template = env.get_template('protocol_template.html')
 
 class FileBuilder:
 
-	def __init__(self, data: dict):
+	def __init__(self, data: dict, empfaenger_name: str = "Jon Doe") -> None:
 		"""
-		The function __init__() is a constructor that initializes the class with the data from the config file
-		:param data: The data to be written to the file
+		The function __init__() initializes the class with the data from the config file and the data from the dictionary
+
+		:param data: A dictionary containing the data to be written to the file
 		:type data: dict
+		:param empfaenger_name: The name of the person who will receive the email, defaults to Jon Doe
+		:type empfaenger_name: str (optional)
 		"""
+
 		self.Outfile = config.OutputFile
 		self.DateFormat = config.DateFormat
 		self.IT_MitarbeiterName = config.IT_MitarbeiterName
-		self.EmpfaengerName = "Jon Doe"
+		self.EmpfaengerName = empfaenger_name
 		self.Data = data
 
 
